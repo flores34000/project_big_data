@@ -2,11 +2,14 @@ handle = ["@jcunniet","@PaulLampon","@Aziliz31","@ssoumier","@marionsouzeau","@g
 
 puts "\033[31m"+ "Combien y a-t-il de handle dans cette array ? 🤔"+"\033[0m"
 
-nombre_handle = handle.length
+
+    nombre_handle = handle.length
+    
+    puts nombre_handle
+
 
 puts ""
 
-puts nombre_handle
 
 puts ""
 puts ""
@@ -38,7 +41,10 @@ puts ""
 puts ""
 
 puts "\033[31m"+"Combien commencent par une majuscule (première lettre juste après le @) ?🤔" +"\033[0m"
+puts ""
 
+majuscule = handle.select { |item| item.start_with?( /@[[:upper:]]/ ) }
+puts majuscule.length
 
 
 puts ""
